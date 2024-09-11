@@ -1,10 +1,15 @@
-const Tour = ({ image, date, title, info, location, duration, cost }) => {
+const Tour = ({ id, image, date, title, info, location, duration, cost, onDelete }) => {
+  const handleDelete = () => {
+    onDelete(id); // Pass the item's ID to the parent component for deletion
+  };
+  
   return (
     <article className="tour-card">
       <div className="tour-img-container">
         <img src={image} className="tour-img" alt={title} />
         <p className="tour-date">{date}</p>
       </div>
+      
       <div className="tour-info">
         <div className="tour-title">
           <h4>{title}</h4>
@@ -21,6 +26,8 @@ const Tour = ({ image, date, title, info, location, duration, cost }) => {
           <p>{duration} days</p>
         </div>
       </div>
+
+      <button onClick={handleDelete}>Not Interested</button>
     </article>
   );
 };
