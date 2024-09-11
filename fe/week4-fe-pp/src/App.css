@@ -96,6 +96,50 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
+.reject_button {
+  background-color: var(--clr-grey-2);
+  padding: 0.5rem;
+  color: var(--clr-grey-10);
+  border: none;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+.reject_button:hover {
+  background-color: var(--clr-grey-8);
+  color: var(--clr-grey-2);
+}
+
+#register_div {
+  margin: 2rem 4rem;
+}
+
+#register_div label {
+  color: var(--clr-primary-3);
+  padding: 1rem;
+  display: inline;
+}
+
+#register_div form {
+  max-width: 80vw;
+  margin: 2rem auto;
+}
+
+
+#register_submit_button {
+  margin: 1rem; 
+  padding: 0.75rem 1rem;
+  background-color: var(--clr-primary-3);
+  border: none;
+  color: var(--clr-white);
+  border-radius: 12px;
+}
+
+#register_submit_button:hover {
+  background-color: var(--clr-primary-5)
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;

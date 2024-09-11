@@ -25,9 +25,8 @@ const Tour = ({ id, image, date, title, info, location, duration, cost, onDelete
           <p>from {cost}</p>
           <p>{duration} days</p>
         </div>
+        <button className="reject_button" onClick={handleDelete}>Not Interested</button>
       </div>
-
-      <button onClick={handleDelete}>Not Interested</button>
     </article>
   );
 };

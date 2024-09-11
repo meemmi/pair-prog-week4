@@ -11,7 +11,7 @@ const Service = ({ id, icon, title, text, onDelete }) => {
       <div className="service-info">
         <h4 className="service-title">{title}</h4>
         <p className="service-text">{text}</p>
-        <button onClick={handleDelete}>Not Interested</button>
+        <button className="reject_button" onClick={handleDelete}>Not Interested</button>
       </div>
     </article>
   );
